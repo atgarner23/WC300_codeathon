@@ -1,0 +1,118 @@
+/* ===============
+Global Style Start
+================== */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Encode+Sans+SC&family=Lexend+Exa&family=Lexend+Giga&family=Urbanist:ital@0;1&family=Walter+Turncoat&display=swap');
+/* this keeps padding and border from adding to element width */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* =============
+Global Style End
+================ */
+/* ===============
+Header Style Start
+================== */
+
+
+
+/* =============
+Header Style End
+================ */
+/* =============
+Main Style Start
+================ */
+
+
+
+/* ===========
+Main Style End
+============== */
+/* ===============
+Footer Style Start
+================== */
+
+
+
+/* =============
+Footer Style End
+================ */
+
+/* ==========
+Media Queries
+============= */
+
+/* Tablet */
+@media only screen and (min-width: 580px) {
+  /* ===============
+  Global Style Start
+  ================== */
+  
+
+  /* =============
+  Global Style End
+  ================ */
+  /* ===============
+  Header Style Start
+  ================== */
+  
+
+  /* =============
+  Header Style End
+  ================ */
+  /* =============
+  Main Style Start
+  ================ */
+  
+
+  /* ===========
+  Main Style End
+  ============== */
+  /* ===============
+  Footer Style Start
+  ================== */
+  
+
+  /* =============
+  Footer Style End
+  ================ */
+}
+
+/* Desktop */
+@media only screen and (min-width: 850px) {
+  /* ===============
+  Global Style Start
+  ================== */
+  
+
+  /* =============
+  Global Style End
+  ================ */
+  /* ===============
+  Header Style Start
+  ================== */
+  
+
+  /* =============
+  Header Style End
+  ================ */
+  /* =============
+  Main Style Start
+  ================ */
+  
+
+  /* ===========
+  Main Style End
+  ============== */
+  /* ===============
+  Footer Style Start
+  ================== */
+  
+
+  /* =============
+  Footer Style End
+  ================ */
+}
+/* ==
+Fonts
+===== */
+
