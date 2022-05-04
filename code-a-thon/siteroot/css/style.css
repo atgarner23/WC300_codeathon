@@ -69,6 +69,9 @@ nav.tglobal .tul li a{
   font-size: 1.5rem;
   line-height: 3rem;
 }
+nav.tglobal .tul li a:hover{
+  color: #dc0000;
+}
 body.thome nav.tglobal .tul li.thome a,
 body.tbrands nav.tglobal .tul li.tbrands a,
 body.tblog nav.tglobal .tul li.tblog a,
