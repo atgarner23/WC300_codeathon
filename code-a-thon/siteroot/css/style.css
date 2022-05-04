@@ -1,10 +1,24 @@
 /* ===============
 Global Style Start
 ================== */
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Encode+Sans+SC&family=Lexend+Exa&family=Lexend+Giga&family=Urbanist:ital@0;1&family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+  font-family: 'acherusgrotesque-regular';
+  src: url('acherusgrotesque-regular-webfont.woff2') format('woff2'),
+       url('acherusgrotesque-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /* this keeps padding and border from adding to element width */
 *, *::before, *::after {
   box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #000;
 }
 /* =============
 Global Style End
@@ -12,7 +26,9 @@ Global Style End
 /* ===============
 Header Style Start
 ================== */
-
+nav.tglobal .tul{
+  display: flex;
+}
 
 
 /* =============
@@ -115,4 +131,5 @@ Media Queries
 /* ==
 Fonts
 ===== */
-
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
