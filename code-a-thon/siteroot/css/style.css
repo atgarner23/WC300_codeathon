@@ -51,7 +51,7 @@ header > div.tdiv:first-of-type{
   padding: 25px 0 0;
   width: 61vw;
 }
-h1.th1{
+h1.th1 a{
   font-family: 'acherusgrotesque-regular';
   font-size: 3rem;
   color: #dc0000;
@@ -152,15 +152,215 @@ Header Style End
 /* =============
 Main Style Start
 ================ */
-
-
-
+body {
+  line-height: 1.5;
+}
+.ncategories,
+.nsales,
+.nblogposts {
+  display: flex;
+}
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 300;
+}
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #dc0000;
+  font-size: 1.875rem;
+}
+hr {
+  height: 3px;
+  background-color: #dc0000;;
+  width: 115px;
+  border: none;
+}
+figcaption {
+  margin-top: 25px;
+}
+figcaption#sunglasses {
+  margin-left: 1rem;
+}
+figcaption p {
+  line-height: 1.33;
+  font-size: 1.125rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  margin: 65px 0 65px 0;
+}
+figcaption p.byline {
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  margin: 0;
+}
+div.ncontainer {
+  width: 1180px;
+  margin: 1rem auto;
+}
+.ncategories,
+hr:first-of-type {
+  margin-top: 60px;
+}
+div#nmen,
+div#nwomen,
+div#nwatches {
+  height: 419px;
+  width: 370px;
+}
+div#nmen {
+  background-image: url(../images/men.jpg);
+  background-color: black;
+  margin-left: 1rem;
+}
+div#nmen:hover,
+div#nwomen:hover,
+div#nwatches:hover,
+div#nsale1:hover,
+div#nsale2:hover {
+  opacity: .5;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+div#nmen, div#nwomen, div#nwatches {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 26.25rem;
+  border: solid 3px #fff;
+}
+div#nsale1,
+div#nsale2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 2.8125rem;
+  text-align: center;
+  line-height: 1;
+  padding-top: 140px;
+}
+div#nwomen {
+  background-image: url(../images/women.jpg);
+  margin: 0 1.25rem 0 1.25rem;
+}
+div#nwatches {
+  background-image: url(../images/watches.jpg);
+  margin-right: 1rem;
+}
+div#nsale1 {
+  background-image: url(../images/sale1.jpg);
+  width: 570px;
+  height: 418px;
+  margin: 1.5rem 1rem 1rem 1rem;
+  color: #fff;
+} 
+div#nsale2 {
+  background-image: url(../images/sale2.jpg);
+  width: 570px;
+  height: 418px;
+  margin: 1.5rem 1rem 1rem 1rem;
+  color: #fff;
+}
+div#nmensfashion {
+  background-image: url(../images/mensfashion.jpg);
+  width: 570px;
+  height: 400px;
+  margin-right: 1rem;
+  margin-top: 65px;
+}
+div#nsunglasses {
+  background-image: url(../images/sunglasses.jpg);
+  width: 570px;
+  height: 400px;
+  margin-left: 1rem;
+  margin-top: 65px;
+}
+figcaption a {
+  border: solid 1px #333;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 1rem;
+  line-height: 3.2;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  width: 170px;
+  height: 53px;
+  text-decoration: none;
+}
 /* ===========
 Main Style End
 ============== */
 /* ===============
 Footer Style Start
 ================== */
+footer{
+  color: #fff;
+}
+footer form.tform{
+  background: url(../images/bg_form.jpg) center top / cover no-repeat;
+  height: 250px;
+}
+footer form.tform > div.tdiv{
+  position: relative;
+  margin: 0 auto;
+  padding-top: 76px;
+  width: 61vw;
+}
+footer form.tform label.tlabel{
+  position: absolute;
+  left: -999rem;
+}
+footer form.tform input.tinput[type="email"]{
+  background-color: transparent;
+  border: solid 1px #fff;
+  width: 771px;
+  font-size: 0.8125rem;
+  line-height: 3rem;
+  margin-top: 30px;
+  padding-left: 80px;
+}
+footer form.tform input.tinput[type="email"]::placeholder{
+  color: #fff;
+}
+footer form.tform > div.tdiv div.tdiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer form.tform > div.tdiv i{
+  position: absolute;
+  top: 131px;
+  left: 14px;
+  font-size: 2.25rem;
+  color: #fff;
+}
+footer form.tform > div.tdiv a.ta{
+  color:  #000;
+  background-color: #fff;
+  width: 272px;
+  line-height: 3rem;
+  text-align: center;
+}
+footer div.tdiv.tsocial{
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 46px;
+  padding: 58px 0;
+}
+footer div.tdiv.tsocial i{
+  color: red;
+}
+
 
 
 
