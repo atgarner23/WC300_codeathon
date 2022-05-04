@@ -95,7 +95,7 @@ header > div.tdiv:nth-of-type(2) p.tp{
   font-weight: 300;
 }
 header > div.tdiv:nth-of-type(2) p.tp:nth-of-type(1){
-  font-kerning: 10px;
+  letter-spacing: 10px;
 }
 header > div.tdiv:nth-of-type(2) p.tp:nth-of-type(2){
   font-family: 'Lato', sans-serif;
