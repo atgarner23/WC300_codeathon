@@ -34,7 +34,10 @@
       </div>
     </section>
   </section>
-<div class="gModal" id="gModal">  
+
+  <div class="gModal" id="gModal">
+    <div class="gModalContent">  
+      <span class="close">&times;</span>
   <h1 class="gModalHead">Calculate Your Size Below</h1>
 <table>
     <tr class="gRow1">
@@ -69,6 +72,7 @@
     </tr>
 </table>
 </div>
+</div>
 <script>
   // Get the modal
 var modal = document.getElementById("gModal");
@@ -85,9 +89,9 @@ btn.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-//span.onclick = function() {
-//  modal.style.display = "none";
-//}
+span.onclick = function() {
+ modal.style.display = "none";
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
