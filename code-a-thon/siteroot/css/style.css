@@ -2,6 +2,8 @@
 Global Style Start
 ================== */
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Encode+Sans+SC&family=Lexend+Exa&family=Lexend+Giga&family=Urbanist:ital@0;1&family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400;600;700&display=swap');
+
 /* this keeps padding and border from adding to element width */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -21,8 +23,142 @@ Header Style End
 /* =============
 Main Style Start
 ================ */
+/* ==========
+Featured Item Start
+============== */
+.gFlex{
+  display: flex;
+}
+.gTrendingItems{
+  background-image: url(../images/featured-item-bg.jpg);
+  padding: 3rem;
+}
+.gItemImg{
+  padding: 2rem;
+  width: 364px;
+  height: 347px;
+  margin-inline: auto;
+  margin-block: auto;
+}
+.gitem{
+  color: #777;
+  justify-content: center;
+  gap: 8.312rem;
+  padding: 3rem;
 
+}
+.gItemText{
+  width: 45%;
+}
+.gItemHead{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #dc0000;
+  font-size: 1.875rem;
+}
+.gHr{
+  width: 1.875rem;
+  color: black;
+  margin: 0;
+}
+.gItemCap{
+  font-family: 'Open Sans', sans-serif;
+  margin-block: 1.75rem;
+}
+.gItemDesc{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.125rem;
+  margin-top: 1.125rem;
+}
+fieldset.gFlex{
+  gap: 2rem;
+  margin-block: 2rem;
+}
+label,
+button{
+  color:#333;
+  cursor: pointer;
+  font-size: 1rem;
+  /* line-height: 1.5; */
+  padding: 1rem;
+  display: block;
+  width: 4.375rem;
+  text-align: center;
+  border: 1px solid #333;
+  border-left-color: #ccc;
+  border-right-color: #ccc;
+}
+.gBtnBox{
+  gap: 2rem;
+}
+button{
+  width: 10.75rem;
+  border-left-color: #333;
+  border-right-color: #333;
+}
+label:hover,
+label:focus,
+button:hover,
+button:focus{
+  background-color: #333;
+  border: 1px solid #333;
+  color: #fff;
+}
+input:checked + label{
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+}
+.gHidden{
+  display: none;
+}
+/* =============
+Table Styles Start
+================ */
+.gModal{
+  /* width: 75%; */
+  margin-inline: auto;
+  border: solid 1px red;
+  padding: 1.5rem;
+  display: hidden;
+}
+.gModalHead{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  width: fit-content;
+  /* margin-inline: auto; */
+}
+table{
+  width: 50%;
+  /* margin-inline: auto; */
 
+}
+tr:nth-of-type(even){
+  background-color: #ccc;
+}
+th, td{
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  padding: .5rem; 
+}
+th {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+td {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* ============
+Table Style End
+=============== */
+/* ===========
+Featured Item End
+================= */
 
 /* ===========
 Main Style End

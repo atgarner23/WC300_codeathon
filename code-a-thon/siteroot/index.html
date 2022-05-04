@@ -9,6 +9,92 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <section class="gTrendingItems">
+    <hr>
+    <h2>Trending Items</h2>
+    <hr>
+    <section class="gFlex gitem">
+      <img src="images/doc-marten.png" alt="Dr. Martens Aztec leather boot in brown" class="gItemImg">
+      <div class="gItemText">
+        <h3 class="gItemHead">Dr. Martens Unisex 8 Eye Aztec</h3>
+        <p class="gItemCap">All Season</p>
+        <hr class="gHr">
+        <p class="gItemDesc">When you think of Dr. Martens, you think of the 1460 8-Eye Boot. This style icon includes all of the authentic Doc Martens touches that have made it a true original. Goodyear-welted construction means that these boots are made to last by sewing and heat sealing the sole to the upper for exceptional durability. The slip-resistant sole and air-cushioned heel enhance traction and comfort.</p>
+        <fieldset class="gFlex">
+          <div><input type="radio" name="size" class="gSize gHidden" id="jr"><label for="jr">Jr</label></div>
+          <div><input type="radio" name="size" class="gSize gHidden" id="S"><label for="S">S</label></div>
+          <div><input type="radio" name="size" class="gSize gHidden" id="L"><label for="L">L</label></div>
+          <div><input type="radio" name="size" class="gSize gHidden" id="M"><label for="M">M</label></div>
+          <div><input type="radio" name="size" class="gSize gHidden" id="XL"><label for="XL">XL</label></div>
+        </fieldset>
+        <div class="gBtnBox gFlex">
+          <button class="gBtn">ADD TO CART</button>
+          <button class="gBtn" id="gBtnSG">SIZE GUIDE</button>
+        </div>
+      </div>
+    </section>
+  </section>
+<div class="gModal" id="gModal">  
+  <h1 class="gModalHead">Calculate Your Size Below</h1>
+<table>
+    <tr class="gRow1">
+        <th>Sizing</th>
+        <th>Womens</th>
+        <th>Mens</th>
+    </tr>
+    <tr class="gRow2">
+        <th>Junior</th>
+        <td>4.5 - 6</td>
+        <td>3.5 - 5</td>
+    </tr>
+    <tr class="gRow3">
+        <th>Small</th>
+        <td>6.5 -8</td>
+        <td>5.5 -7.5</td>
+    </tr>
+    <tr class="gRow4">
+        <th>Medium</th>
+        <td>8.5 - 10</td>
+        <td>7.5 - 9</td>
+    </tr>
+    <tr class="gRow5">
+        <th>Large</th>
+        <td>10.5 - 12</td>
+        <td>9.5 - 11</td>
+    </tr>
+    <tr class="gRow6">
+        <th>Extra Large</th>
+        <td>12.5+</td>
+        <td>11.5 - 3</td>
+    </tr>
+</table>
+</div>
+<script>
+  // Get the modal
+var modal = document.getElementById("gModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("gBtnSG");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+//span.onclick = function() {
+//  modal.style.display = "none";
+//}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>
