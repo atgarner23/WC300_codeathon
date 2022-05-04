@@ -30,8 +30,19 @@ Global Style End
 Header Style Start
 ================== */
 header{
-  background: url(../images/hero_home.jpg) center top / cover no-repeat;
   height: 100vh;
+}
+body.thome header{
+  background: url(../images/hero_home.jpg) center top / cover no-repeat;
+}
+body.tbrands header{
+  background: url(../images/hero_brands.jpg) center top / cover no-repeat;
+}
+body.tblog header{
+  background: url(../images/hero_blog.jpg) center top / cover no-repeat;
+}
+body.tcontact header{
+  background: url(../images/hero_contact.jpg) center top / cover no-repeat;
 }
 header > div.tdiv:first-of-type{
   display: flex;
@@ -58,7 +69,13 @@ nav.tglobal .tul li a{
   font-size: 1.5rem;
   line-height: 3rem;
 }
-header > div.tdiv:last-of-type{
+body.thome nav.tglobal .tul li.thome a,
+body.tbrands nav.tglobal .tul li.tbrands a,
+body.tblog nav.tglobal .tul li.tblog a,
+body.tcontact nav.tglobal .tul li.tcontact a{
+  color: #dc0000;
+}
+header > div.tdiv:nth-of-type(2){
   position: absolute;
   top: 33%;
   text-align: center;
@@ -68,17 +85,36 @@ header > div.tdiv:last-of-type{
   gap: 44px;
   width: 100%;
 }
-header > div.tdiv:last-of-type p.tp{
+header > div.tdiv:nth-of-type(2) p.tp{
+  position: relative;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.875rem;
   font-weight: 300;
 }
-header > div.tdiv:last-of-type p.tp:nth-of-type(2){
+header > div.tdiv:nth-of-type(2) p.tp:nth-of-type(2){
   font-family: 'Lato', sans-serif;
   font-size: 3.625rem;
   font-weight: 900;
 }
-header > div.tdiv:last-of-type a.ta{
+header > div.tdiv:nth-of-type(2) p.tp:nth-of-type(3)::before,
+header > div.tdiv:nth-of-type(2) p.tp:nth-of-type(3)::after{
+  position: absolute;
+  top: 0;
+  content: '';
+  display: block;
+  width: 28px;
+  height: 49px;
+  opacity: .3;
+}
+header > div.tdiv:nth-of-type(2) p.tp:nth-of-type(3)::before{
+  background: url(../images/arrow_left.gif) center / contain no-repeat;
+  left: 30px;
+}
+header > div.tdiv:nth-of-type(2) p.tp:nth-of-type(3)::after{
+  background: url(../images/arrow_right.gif) center / contain no-repeat;
+  right: 30px;
+}
+header > div.tdiv:nth-of-type(2) a.ta{
   font-family: 'Lato', sans-serif;
   font-size: 1.125rem;
   font-weight: 900;
@@ -87,6 +123,28 @@ header > div.tdiv:last-of-type a.ta{
   border-radius: 2px;
   width: 200px;
   margin: 0 auto;
+}
+header > div.tdiv:nth-of-type(3){
+  position: absolute;
+  bottom: 58px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+header > div.tdiv:nth-of-type(3) > div.tcircle{
+  background-color: #fff;
+  border: solid 2px transparent;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+body.thome header > div.tdiv:nth-of-type(3) > div.tcircle.thome,
+body.tbrands header > div.tdiv:nth-of-type(3) > div.tcircle.tbrands,
+body.tblog header > div.tdiv:nth-of-type(3) > div.tcircle.tblog,
+body.tcontact header > div.tdiv:nth-of-type(3) > div.tcircle.tcontact{
+  background-color: transparent;
+  border: solid 2px #fff;
 }
 /* =============
 Header Style End
