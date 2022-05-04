@@ -1,0 +1,75 @@
+header {
+  min-height: 932px;
+  max-width: 1920px;
+  background: url("../images/hero-home.jpg") center;
+  margin: 0 auto;
+}
+header.brands {
+  background-image: url("../images/hero-brands.jpg");
+}
+header.blogTop {
+  background-image: url("../images/hero-blog.jpg");
+}
+header.contact {
+  background-image: url("../images/hero-contact.jpg");
+}
+h1.logo {
+  font-family: "acherus_grotesque_regularRg";
+  font-size: 3rem;
+  color: #c54648;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 25px 0 0;
+}
+.top-nav {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+}
+.top-nav a.current {
+  color: #c54648;
+}
+.hero-content {
+  text-align: center;
+  padding: 240px 0 0;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero-content h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-size: 3.625rem;
+  line-height: 2.4;
+}
+.hero-content p {
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  font-weight: 300;
+}
+.hero-content p:first-of-type {
+  letter-spacing: 0.6rem;
+}
+.hero-content button {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 1px solid white;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: white;
+  padding: 16px 50px;
+  margin-top: 56px;
+}

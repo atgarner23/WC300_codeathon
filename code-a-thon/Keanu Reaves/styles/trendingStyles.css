@@ -1,0 +1,175 @@
+section.trending {
+  background: url("../images/trending-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 70px 0;
+  margin: auto;
+  min-height: 917px;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.trending article {
+  width: 40%;
+  margin-left: 5%;
+}
+img.trending {
+  align-self: end;
+  padding: 10px 130px;
+  height: 347px;
+  width: auto;
+}
+div.trending-body {
+  display: flex;
+}
+div.bars {
+  display: flex;
+}
+div.bars hr {
+  margin: 30px 25%;
+}
+hr.red {
+  width: 90px;
+  height: 3px;
+  border: none;
+  background-color: #dc0000;
+}
+hr.black {
+  width: 30px;
+  height: 1px;
+  border: none;
+  background-color: black;
+  float: left;
+  margin-top: 30px;
+}
+h2.trending-items-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2.25rem;
+  line-height: 0;
+  margin: 0 auto;
+}
+h3.trending-items-title {
+  font-family: "Open Sans", sans-serif;
+  color: #dc0000;
+  font-weight: 700;
+  font-size: 1.875rem;
+  padding-top: 40px;
+}
+h4.trending-items-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  padding-top: 30px;
+}
+.trending p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+  font-size: 1.125rem;
+  padding-top: 20px;
+}
+div.sizes {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+button.size-box {
+  border: 1px solid black;
+  margin-right: 32px;
+  padding: 12px 22px;
+  background: none;
+  margin-top: 20px;
+}
+
+div.cta-section {
+  display: flex;
+  padding-top: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+button.cta-buttons {
+  border: 1px solid black;
+  margin-right: 30px;
+  padding: 17px 32px;
+  background: none;
+}
+section.trending button:hover {
+  background-color: #333333;
+  color: white;
+  transition: ease 0.25s;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-left: 30px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+table {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border-collapse: collapse;
+  width: 70%;
+  border: 1px solid white;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr > td:first-child {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}

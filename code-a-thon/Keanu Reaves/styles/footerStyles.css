@@ -1,0 +1,64 @@
+.subscribe {
+  min-height: 250px;
+  max-width: 1920px;
+  background: url("../images/footer-bg.jpg") center;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+.subscribe form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+.subscribe label {
+  color: white;
+  font-size: 1.125rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 4;
+  font-weight: 300;
+  display: block;
+}
+.subscribe input {
+  min-width: 770px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid white;
+  padding: 0 0 0 80px;
+}
+.subscribe input::placeholder {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  font-family: "Open Sans", sans-serif;
+}
+.subscribe .far {
+  color: white;
+  font-size: 2.2rem;
+  position: absolute;
+  left: 13px;
+  top: 78px;
+}
+.subscribe button {
+  height: 50px;
+  align-self: flex-end;
+  width: 270px;
+  background-color: white;
+  font-size: 1.125rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  border: none;
+}
+footer nav ul {
+  display: flex;
+  font-size: 4rem;
+  color: #dc0000;
+  width: 360px;
+  margin: 0 auto;
+  justify-content: space-between;
+  line-height: 3;
+}
+footer nav ul a {
+  color: #dc0000;
+}
