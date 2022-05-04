@@ -1,7 +1,7 @@
 /* ===============
 Global Style Start
 ================== */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap');
 @font-face {
   font-family: 'acherusgrotesque-regular';
   src: url('acherusgrotesque-regular-webfont.woff2') format('woff2'),
@@ -15,10 +15,13 @@ Global Style Start
 }
 body{
   font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
 }
 a{
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 /* =============
 Global Style End
@@ -26,11 +29,65 @@ Global Style End
 /* ===============
 Header Style Start
 ================== */
+header{
+  background: url(../images/hero_home.jpg) center top / cover no-repeat;
+  height: 100vh;
+}
+header > div.tdiv:first-of-type{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 25px 0 0;
+  width: 61vw;
+}
+h1.th1{
+  font-family: 'acherusgrotesque-regular';
+  font-size: 3rem;
+  color: #dc0000;
+  width: 60%;
+}
+nav.tglobal{
+  width: 40%;
+}
 nav.tglobal .tul{
   display: flex;
+  justify-content: space-between;
 }
-
-
+nav.tglobal .tul li a{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+header > div.tdiv:last-of-type{
+  position: absolute;
+  top: 33%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  width: 100%;
+}
+header > div.tdiv:last-of-type p.tp{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 300;
+}
+header > div.tdiv:last-of-type p.tp:nth-of-type(2){
+  font-family: 'Lato', sans-serif;
+  font-size: 3.625rem;
+  font-weight: 900;
+}
+header > div.tdiv:last-of-type a.ta{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 900;
+  line-height: 3.625rem;
+  border: solid 2px #fff;
+  border-radius: 2px;
+  width: 200px;
+  margin: 0 auto;
+}
 /* =============
 Header Style End
 ================ */
